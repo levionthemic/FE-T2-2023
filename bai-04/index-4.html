@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- Background  -->
+
+    <!-- Background-clip: Xác định phạm vi được thiết lập màu nền của phần tử (Áp dụng cho background là màu sắc) -->
+    <!-- <style>
+      .box-3 {
+        background-color: blue;
+        border: 10px dashed #000;
+        padding: 50px;
+        background-clip: border-box;
+        color: white;
+      }
+    </style>
+    <div class="box-3">Nội dung box</div> -->
+
+    <!-- Background-origin: Giống background-clip, nhưng background-clip là dành cho nền là màu sắc, còn background-origin là dùng cho nền ảnh -->
+    <style>
+      .box-4 {
+        background-image: url(images/image-1.jpg);
+        background-repeat: no-repeat;
+        border: 10px dashed yellow;
+        padding: 50px;
+        color: white;
+        background-origin: content-box;
+      }
+    </style>
+    <div class="box-4">Nội dung box</div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <style>
+      .box {
+        background: #9c27b0;
+        color: white;
+        padding: 50px;
+        border: 10px solid #000;
+
+        height: 220px;
+        box-sizing: border-box; /* Để thuộc tính height ảnh hưởng đến cả box (đến border) chứ k chỉ là chiều cao của content (mặc định giá trị của box-sizing là content-box) */
+        /* Chú ý chiều cao của padding và cả box, vì chiều cao của content tối thiếu là 0 => chiều cao của box >= 2*padding + border */
+        /* Các ràng buộc của thuộc tính width giống thuộc tính height*/
+        width: 50vw; 
+        min-width: 200px;
+      }
+    </style>
+    <div class="box">Nội dung box</div>
+  </body>
+</html>
