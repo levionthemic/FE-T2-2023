@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <!-- <style>
+      /* Adjacent sibling selector */
+      /* div + p {
+        background-color: yellow;
+      } */
+
+      /* General sibling selector */
+      /* div ~ p {
+        background-color: yellow;
+      } */
+    </style>
+    <p>Nội dung 0</p>
+    <div>
+      <p>Nội dung 1</p>
+      <p>Nội dung 2</p>
+    </div>
+    <p>Nội dung 3</p>
+    <p>Nội dung 4</p> -->
+
+
+    <style>
+      /* Child selector */
+      div > p {
+        background-color: yellow;
+      }
+
+      /* Descendant selector */
+      div p {
+        background-color: yellow;
+      }
+    </style>
+    <p>Nội dung 0</p>
+
+    <div>
+      <p>Nội dung 1</p>
+      <p>Nội dung 2</p>
+      <section>
+        <p>Nội dung 3</p>
+        <p>Nội dung 4</p>
+      </section>
+    </div>
+
+    <p>Nội dung 5</p>
+    <p>Nội dung 6</p>
+
+  </body>
+</html>
