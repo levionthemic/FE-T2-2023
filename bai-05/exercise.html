@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .box {
+        background-color: #0161C2;
+        width: 98vw;
+        height: 300px;
+        place-content: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 2%;
+      }
+      .inner-content {
+        color: #fff;
+        margin: 30px;
+        position: relative;
+        z-index: 1;
+      }
+      .inner-content::first-letter {
+        font-size: 40px;
+      }
+      .inner-content::first-line {
+        text-transform: uppercase;
+      }
+      .box::before {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 120px;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        opacity: 0.2;
+      }
+      .box::after {
+        content: "";
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        opacity: 0.2;
+      }
+    </style>
+    <div class="box">
+      <div class="inner-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid laudantium corporis, quia provident quaerat neque assumenda sed illum at, labore ipsam reprehenderit, ipsum quos nihil? Voluptatem eum voluptatibus amet obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quo, culpa quis quas id numquam itaque illo ea possimus veritatis, tempore harum natus laudantium, vel debitis inventore magnam eligendi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quo, veritatis doloremque, temporibus voluptatem voluptas veniam sapiente ipsum voluptatum laborum eius deserunt suscipit eveniet est vitae esse id, quisquam reprehenderit?
+      </div>
+    </div>
+  </body>
+</html>
