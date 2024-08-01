@@ -1,0 +1,20 @@
+:root {
+  --color-one: #0daeee;
+  --color-two: #9d0000;
+}
+
+h3 {
+  --local-color: rgb(10, 206, 10);
+  color: var(--local-color);
+}
+
+h4 {
+  color: var(--color-two);
+}
+
+h2 {
+  color: var(--color-one);
+}
+p {
+  color: var(--color-one);
+}

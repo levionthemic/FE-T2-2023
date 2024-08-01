@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <style>
+      li {
+        color: red;
+      }
+      ul li {
+        color: green;
+      }
+    </style>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul> -->
+
+    <!-- Specificity -->
+    <style>
+      h2 {
+        color: red!important;
+      } 
+      /* 0-0-0-1 => 1 */
+
+      h2.title {
+        color: blue;
+      }
+      /* 0-0-1-1 => 11 */
+
+      div h2.title {
+        color: orange;
+      }
+      /* 0-0-1-2 => 12 */
+
+      .head h2.title {
+        color: green;
+      }
+      /* 0-0-2-1 => 21 */
+
+      div.head h2.title {
+        color: gray;
+      }
+      /* 0-0-2-2 => 21 */
+
+      div.head h2.title:last-child {
+        color: yellow;
+      }
+      /* 0-0-3-2 => 32 */
+
+      #main div.head h2.title {
+        color: pink;
+      }
+      /* 0-1-2-2 => 122 */
+
+      #main div#head h2.title {
+        color: purple;
+      }
+      /* 0-2-1-2 => 212 */
+
+      #main div#head h2.title::first-letter {
+        color: red;
+      }
+      /* 0-2-1-3 => 213 */
+
+      #main div#head h2::first-letter {
+        color: yellow;
+      }
+      /* 0-2-0-3 => 203 */
+    </style>
+    <main id="main">
+      <div class="head" id="head">
+        <h2 class="title">
+          Tiêu đề 1
+        </h2>
+        <h2 class="title" style="color: black;">
+          Tiêu đề 2
+        </h2>
+      </div>
+    </main>
+  </body>
+</html>
