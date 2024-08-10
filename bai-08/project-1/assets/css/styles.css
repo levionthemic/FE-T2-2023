@@ -296,3 +296,40 @@
 }
 /* End Section Two */
 
+/* Section Three */
+.section-three {
+  background-color: #F0F2F5;
+  padding: 100px 0px;
+}
+
+.section-three .inner-head {
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.section-three .inner-head .inner-title {
+  font-size: 60px;
+  color: var(--color-one);
+  margin-bottom: 0;
+}
+.section-three .inner-head .inner-desc {
+  font-size: 24px;
+}
+
+.section-three .inner-wrap {
+  display: flex;
+}
+.section-three .inner-wrap .inner-box {
+  text-align: center;
+  width: calc(100% / 3);
+}
+.section-three .inner-wrap .inner-box .inner-title {
+  color: var(--color-one);
+  font-size: 24px;
+}
+.section-three .inner-wrap .inner-box .inner-icon {
+  font-size: 35px;
+}
+/* End Section Three */
