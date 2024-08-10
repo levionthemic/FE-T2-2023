@@ -1,0 +1,49 @@
+.section-one .inner-main {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-one .inner-head {
+  background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08);
+  text-align: center;
+  padding: 10px;
+}
+.section-one .inner-head .inner-title {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.section-one .inner-body {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.section-one .card {
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.section-one .card-header {
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+}
+
+.section-one .btn {
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  color: orange;
+  text-decoration: none;
+}
+.section-one .btn:focus {
+  box-shadow: none;
+}
+
+.section-one .btn.collapsed {
+  border: 1px solid #ddd;
+  color: #000;
+}
+
+
+
