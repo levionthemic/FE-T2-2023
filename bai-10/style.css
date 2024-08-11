@@ -12,24 +12,20 @@
   font-weight: 700;
   font-size: 40px;
 }
-
 .section-one .inner-body {
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 0 0 10px 10px;
 }
-
 .section-one .card {
   border: 0;
   margin-bottom: 10px;
 }
-
 .section-one .card-header {
   background-color: #fff;
   border: 0;
   padding: 0;
 }
-
 .section-one .btn {
   margin-bottom: 10px;
   border: 1px solid transparent;
@@ -39,7 +35,6 @@
 .section-one .btn:focus {
   box-shadow: none;
 }
-
 .section-one .btn.collapsed {
   border: 1px solid #ddd;
   color: #000;
@@ -47,3 +42,102 @@
 
 
 
+
+.section-two {
+  margin-top: 60px;
+}
+
+.section-two .inner-main {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.section-two .inner-head {
+  background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08);
+  text-align: center;
+  padding: 10px;
+}
+.section-two .inner-head .inner-title {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+.section-two .inner-head .inner-desc {
+  color: white;
+}
+.section-two .inner-body {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+.section-two .button {
+  background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08);
+  border: 0;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 600;
+  border-radius: 45px;
+}
+
+
+
+.modal-form .modal-content {
+  border-radius: 30px;
+}
+.modal-form .modal-header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.modal-form .modal-header .close {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #000;
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 1;
+}
+.modal-form .modal-header .inner-image {
+  height: 40px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.modal-form .modal-header .inner-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.modal-form .modal-header .inner-desc {
+  margin-bottom: 0;
+}
+.modal-form .modal-body .button {
+  background: -webkit-linear-gradient(-30deg, #f57f20, #d62b08);
+  border: 0;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 600;
+  border-radius: 45px;
+  width: 100%;
+}
+
+
+
+/* Custom 5 columns */
+.col-xl-20 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 1200px) {
+  .col-xl-20 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

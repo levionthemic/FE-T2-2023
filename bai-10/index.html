@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="style.css" />
     <title>Học Bootstrap 4</title>
   </head>
+
   <body>
+    <!-- Collapse -->
     <div class="section-one">
       <div class="container">
         <div class="row">
@@ -24,8 +26,10 @@
               <div class="inner-head">
                 <h2 class="inner-title">Câu hỏi thường gặp</h2>
               </div>
+
               <div class="inner-body">
                 <div class="accordion" id="accordionFaqs">
+                  <!-- Question 1 -->
                   <div class="card">
                     <div class="card-header" id="headingOne">
                       <h2 class="mb-0">
@@ -56,6 +60,7 @@
                     </div>
                   </div>
 
+                  <!-- Question 2 -->
                   <div class="card">
                     <div class="card-header" id="headingTwo">
                       <h2 class="mb-0">
@@ -93,6 +98,7 @@
                     </div>
                   </div>
 
+                  <!-- Question 3 -->
                   <div class="card">
                     <div class="card-header" id="headingThree">
                       <h2 class="mb-0">
@@ -140,9 +146,14 @@
       </div>
     </div>
 
-
+    <!-- Dropdown -->
     <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-toggle="dropdown"
+        aria-expanded="false"
+      >
         Dropdown button
       </button>
       <div class="dropdown-menu">
@@ -152,6 +163,324 @@
       </div>
     </div>
 
+    <!-- Form -->
+    <div class="section-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-main">
+              <div class="inner-head">
+                <h2 class="inner-title">Tieu de Form</h2>
+                <p class="inner-desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non
+                  tenetur ea, beatae tempora veritatis quod labore neque iure
+                  optio eum quasi? Voluptatibus excepturi quae cumque fugiat
+                  temporibus modi officiis. Placeat.
+                </p>
+              </div>
+
+              <div class="inner-body">
+                <form action="">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ho va ten *"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="So dien thoai *"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xl-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          placeholder="Noi dung *"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-12 text-center">
+                      <button class="button">Gui ngay</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade modal-form"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              class="inner-image"
+              src="https://cdn.daca.vn/media/logo/logo.svg"
+              alt="Logo"
+            />
+            <h5 class="inner-title" id="exampleModalLabel">
+              Liên hệ với chúng tôi
+            </h5>
+            <p class="inner-desc">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Họ và tên*"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Số điện thoại*"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Lĩnh vực kinh doanh*"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="button">Gửi đi</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <!-- Navs -->
+
+    <div class="section-three">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-head">
+              <h2 class="inner-title">
+                Thảm tấm đế cao su
+              </h2>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-toggle="tab"
+                    data-target="#home"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    Sản phẩm mới
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    data-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    Sản phẩm nổi bật
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="contact-tab"
+                    data-toggle="tab"
+                    data-target="#contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact"
+                    aria-selected="false"
+                  >
+                    Sản phẩm khuyến mãi
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="inner-body">
+
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                Tab Sản phẩm mới
+                <div class="row">
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                Tab Sản phẩm nổi bật
+                <div class="row">
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                Tab Sản phẩm khuyến mãi
+                <div class="row">
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                  <div class="col-xl-20 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="product-item">
+                      Image, title, price
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
