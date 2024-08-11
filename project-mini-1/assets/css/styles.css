@@ -1,0 +1,158 @@
+/* Header */
+.header {
+  background-color: var(--color-bg-one);
+}
+
+.header .container-header {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header .inner-wrap {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header .inner-logo {
+  display: flex;
+  align-items: center;
+}
+.header .inner-logo img {
+  width: 50px;
+  margin-right: 13px;
+  height: auto;
+}
+.header .inner-logo h2 {
+  color: var(--color-text-one);
+}
+
+.header .inner-menu {
+  height: 100%;
+  width: 100%;
+  
+}
+.header .inner-menu .menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.header .inner-menu .menu .item {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 25px 15px;
+  font-size: 20px;
+  color: var(--color-text-one);
+  font-weight: 500;
+}
+.header .inner-menu .menu .item:hover {
+  background: white;
+}
+
+.header .inner-social {
+  display: flex;
+  justify-content: space-between;
+}
+.header .inner-social .inner-social-item {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px;
+  padding: 10px 10px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .inner-social .inner-social-item i {
+  color: black;
+  font-size: 23px;
+}
+/* End Header */
+
+/* Section One */
+.section-one {
+  background-image: url("/project-mini-1/assets/images/background1.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section-one .blur-bg-section-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: none;
+  background-color: black;
+  opacity: 0.7;
+ 
+}
+.section-one .container {
+  position: relative;
+}
+.section-one .inner-wrap {
+  width: 50%;
+  padding: 120px 0;
+  
+}
+
+.section-one .inner-title {
+  margin: 0;
+  color: white;
+
+}
+.section-one h3.inner-title {
+  margin-bottom: 16px;
+}
+.section-one h1.inner-title {
+  font-size: 55px;
+  margin-bottom: 32px;
+}
+.section-one .inner-desc {
+  color: #bbbbae;
+  font-size: 20px;
+  margin-bottom: 32px;
+  margin-top: 0;
+}
+.section-one .inner-button .button {
+  border: 0;
+  padding: 16px 41.6px;
+  margin: 9.6px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-one .button:nth-child(1) {
+  margin-left: 0;
+  background-color: var(--color-bg-two);
+  color: #1b2026;
+}
+.section-one .button:nth-child(1):hover {
+  background: white;
+  transition: all 0.6s ease-in-out;
+}
+.section-one .button:nth-child(2) {
+  background: transparent;
+  border: 1px solid #474747;
+  color: white;
+}
+.section-one .button:nth-child(2):hover {
+  background-color: var(--color-bg-two);
+  color: #1b2026;
+  transition: all 0.6s ease-in-out;
+  border: 1px solid var(--color-bg-two);
+}
+/* End Section One */
