@@ -1,0 +1,66 @@
+.box-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.box-head .inner-title {
+  font-weight: 700;
+  color: #124265;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.box-head .inner-desc {
+  font-size: 16px;
+  color: #8a8a8a;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+
+.contact .inner-info {
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+  padding: 20px;
+  box-shadow: rgba(143, 157, 165, 0.2) 0 8px 24px;
+  height: 100%;
+}
+.contact .inner-info .inner-list .inner-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.contact .inner-info .inner-list .inner-item .inner-icon {
+  background-color: #EAF6ED;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5CB874;
+  margin-right: 10px;
+}
+.contact .inner-info .inner-list .inner-item .inner-content {
+  flex: 1; /* Chiếm phần còn lại */
+}
+.contact .inner-info .inner-list .inner-item .inner-content .inner-title {
+  font-weight: 600;
+}
+
+.contact .inner-info .inner-map {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.contact .inner-info .inner-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact .inner-form {
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+  padding: 20px;
+  box-shadow: rgba(143, 157, 165, 0.2) 0 8px 24px;
+  height: 100%;
+}
