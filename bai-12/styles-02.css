@@ -1,0 +1,90 @@
+/* Box Head */
+.box-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.box-head .inner-title {
+  font-weight: 700;
+  color: #124265;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.box-head .inner-desc {
+  font-size: 16px;
+  color: #8a8a8a;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+/* End Box Head */
+
+
+/* Section One */
+.section-one .inner-main {
+  background-color: #F3F9FD;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.section-one .inner-main::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #F3F9FD;
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 20px);
+}
+
+.section-one .inner-content {
+  position: relative;
+  text-align: center;
+  font-style: italic;
+}
+
+.section-one .inner-content::before {
+  content: "\f10d";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  color: #C9E3F5;
+  font-size: 20px;
+}
+
+.section-one .inner-content::after {
+  content: "\f10e";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  color: #C9E3F5;
+  font-size: 20px;
+}
+
+.section-one .inner-info {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.section-one .inner-info img {
+  width: 80px;
+  height: 80ox;
+  border-radius: 50%;
+  object-fit: cover;
+  
+}
+
+.section-one .inner-info .inner-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 20px
+}
+
+.section-one .inner-info .inner-position {
+  color: #8a8a8a;
+  margin-bottom: 0;
+}
+/* End Section One */
