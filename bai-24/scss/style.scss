@@ -1,0 +1,47 @@
+$color-red: red;
+$color-green: green;
+
+%button {
+  background: #c9c9c9;
+  color: black;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.button--red {
+  @extend %button;
+  background: $color-red;
+  color: white;
+}
+
+.button--green {
+  @extend %button;
+  background: $color-green;
+  color: white;
+}
+
+
+
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  &__item {
+    margin: 0 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #383737;
+
+    &--active {
+      color: $color-red;
+      cursor: not-allowed;
+    }
+  }
+}
+
