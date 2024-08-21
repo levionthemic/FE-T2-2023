@@ -156,3 +156,90 @@
   border: 1px solid var(--color-bg-two);
 }
 /* End Section One */
+
+
+/* Section Two */
+.section-two {
+  padding: 100px 0;
+  background-color: var(--color-bg-one);
+  position: relative;
+}
+
+.section-two .container {
+  position: relative;
+}
+.section-two .inner-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.section-two .inner-image, .inner-features {
+  width: 60%;
+}
+
+.section-two .inner-wrap .inner-image img {
+  width: 85%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-two .inner-wrap h1.inner-title {
+  color: var(--color-text-one);
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+
+.section-two .inner-features .inner-list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 55px;
+}
+
+.section-two .inner-features .inner-list .inner-item {
+  background: white;
+  width: 30%;
+  height: 150px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-two .inner-features .inner-list .inner-item .inner-icon {
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+}
+.section-two .inner-features .inner-list .inner-item .inner-icon i {
+  font-size: 40px;
+}
+
+.section-two .inner-features .inner-list .inner-item .inner-content {
+  color: var(--color-text-one);
+  font-weight: 700;
+}
+
+.section-two .inner-features .inner-desc {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.section-two .inner-features .button {
+  border: 0;
+  padding: 20px 41.6px;
+  margin: 9.6px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--color-bg-two);
+  margin-left: 0;
+}
+
+.section-two .inner-features .button:hover {
+  background-color: white;
+  transition: all 0.6s ease-in-out;
+}
+
+/* End Section Two */
