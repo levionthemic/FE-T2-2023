@@ -384,3 +384,82 @@
   font-size: 25.6px;
 }
 /* End Section Five */
+
+/* Section Six */
+.section-six {
+  background: #1b2026;
+  padding: 128px;
+}
+
+.section-six .container {
+  background: white;
+  padding: 64px;
+  border-radius: 10px;
+}
+.section-six .inner-wrap {
+  display: flex;
+}
+
+.section-six .inner-wrap .inner-content {
+  width: 60%;
+}
+.section-six .inner-wrap .inner-content h4 {
+  font-size: 17.4px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.section-six .inner-wrap .inner-content p {
+  color: var(--color-text-one);
+  font-size: 60.8px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.section-six .inner-wrap .inner-list {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-six .inner-wrap .inner-list .inner-item {
+  padding: 16px;
+  border: 1px solid rgb(236, 230, 230);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-six .inner-wrap .inner-list .inner-item .inner-title {
+  display: flex;
+  align-items: center;
+  font-size: 17.6px;
+}
+.section-six .inner-wrap .inner-list .inner-item:nth-child(1) .inner-title::before {
+  content: "\f013";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding: 0 16px;
+  font-size: 28px;
+}
+.section-six .inner-wrap .inner-list .inner-item:nth-child(2) .inner-title::before {
+  content: "\f53f";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding: 0 16px;
+  font-size: 28px;
+}
+.section-six .inner-wrap .inner-list .inner-item:nth-child(3) .inner-title::before {
+  content: "\f466";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  padding: 0 16px;
+  font-size: 28px;
+}
+.section-six .inner-wrap .inner-list .inner-item .inner-arrow {
+  padding: 0 16px;
+}
+.section-six .inner-wrap .inner-list .inner-item .inner-arrow i {
+  font-size: 19px;
+}
+/* End Section Six */
