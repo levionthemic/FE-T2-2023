@@ -709,6 +709,7 @@
 .section-ten .container {
   background: #DCE8EB;
   padding: 96px 64px;
+  border-radius: 10px;
 }
 
 .section-ten .inner-wrap {
