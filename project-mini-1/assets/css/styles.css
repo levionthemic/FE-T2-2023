@@ -463,3 +463,193 @@
   font-size: 19px;
 }
 /* End Section Six */
+
+/* Section Seven */
+.section-seven {
+  background: var(--color-bg-one);
+  padding: 80px 80px 10px 80px;
+}
+
+.section-seven .inner-wrap-1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-seven .inner-wrap-1 .inner-subtitle {
+  margin-bottom: 10px;
+}
+.section-seven .inner-wrap-1 .inner-title {
+  color: var(--color-text-one);
+  font-size: 60.8px;
+  margin-bottom: 40px;
+}
+
+.section-seven .inner-wrap-1 .inner-list {
+  display: flex;
+  justify-content: space-between;
+}
+.section-seven .inner-wrap-1 .inner-list .inner-item {
+  list-style-type: none;
+  background: white;
+  border-radius: 10px;
+}
+.section-seven .inner-wrap-1 .inner-list .inner-item .inner-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 51px 51px 0 51px;
+}
+
+.section-seven .inner-wrap-1 .inner-list .inner-item .inner-name {
+  color: var(--color-text-one);
+  font-size: 25.6px;
+  margin-top: 32px;
+}
+
+.section-seven .inner-wrap-1 .inner-list .inner-item ul {
+  padding-left: 51px;
+  padding-right: 51px;
+  margin-top: 51px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.section-seven .inner-wrap-1 .inner-list .inner-item ul li {
+  width: 41.6px;
+  height: 41.58px;
+  list-style-type: none;
+  background-color: var(--color-bg-one);
+  padding: 13px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.section-seven .inner-wrap-1 .inner-list .inner-item ul li i {
+  color: var(--color-text-one);
+}
+
+.section-seven .inner-wrap-2 {
+  position: relative;
+}
+.section-seven .inner-wrap-2 .inner-bg img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.section-seven .inner-wrap-2 .inner-content {
+  background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 60px;
+  border-radius: 20px;
+}
+
+.section-seven .inner-wrap-2 .inner-content .inner-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 32px;
+}
+
+.section-seven .inner-wrap-2 .inner-content .inner-list .inner-item {
+  list-style-type: none;
+  /* margin: 10px 0; */
+  width: 20%;
+}
+
+.section-seven .inner-wrap-2 .inner-content .inner-list .inner-item h4 {
+  font-size: 17.6px;
+  color: var(--color-text-two);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.section-seven .inner-wrap-2 .inner-content .inner-list .inner-item p {
+  font-size: 17.6px;
+  color: var(--color-text-one);
+  font-weight: 800;
+  margin-bottom: 8px;
+
+}
+.section-seven .inner-wrap-2 .inner-content .inner-list .inner-item:nth-child(5) {
+  align-self: center;
+  text-align: center;
+}
+
+.section-seven .inner-wrap-2 .inner-content .inner-list .inner-item button {
+  background: var(--color-text-one);
+  color: white;
+  padding: 16px 41.6px;
+  margin: 9.6px;
+  border-radius: 5px;
+}
+/* End Section Seven */
+
+/* Section Eight */
+.section-eight {
+  background: #31363B;
+  padding: 80px;
+}
+
+.section-eight .inner-subtitle {
+  margin-bottom: 8px;
+}
+.section-eight .inner-title {
+  color: white;
+  font-size: 60.8px;
+  margin-bottom: 48px;
+}
+
+.section-eight .inner-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-eight .inner-list .inner-item {
+  list-style-type: none;
+  width: 31.5%;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.section-eight .inner-list .inner-item .inner-desc {
+  font-size: 25.6px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  position: relative;
+  font-style: italic;
+}
+
+.section-eight .inner-list .inner-item .inner-desc::after {
+  content: "\f10e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 65px;
+  font-style: normal;
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+}
+
+.section-eight .inner-list .inner-item .inner-content {
+  display: flex;
+  align-items: center;
+}
+
+.section-eight .inner-list .inner-item .inner-content .inner-avatar img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.section-eight .inner-list .inner-item .inner-content .inner-info .inner-name {
+  color: var(--color-text-one);
+  font-size: 25.6px;
+  margin-bottom: 8px;
+}
+/* End Section Eight */
