@@ -9,3 +9,38 @@
   + Giảm giá nhiều
  - Hiển thị danh mục sản phẩm, khi click vào danh mục thì data đổi lại theo danh mục đó
  - API mẫu: https://dummyjson.com/products -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Mini 3</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h3>Danh mục sản phẩm</h3>
+    <div class="categories"></div>
+
+    <h3>Danh sách sản phẩm</h3>
+    <form action="">
+      <input type="text" placeholder="Nhập từ khoá tìm kiếm">
+      <button type="submit">Tìm kiếm</button>
+    </form>
+    <select name="sort" id="sort">
+      <option value="default">Mặc định</option>
+      <option value="default">Giá thấp đến cao</option>
+      <option value="default">Giá cao đến thấp</option>
+      <option value="default">Giảm giá nhiều</option>
+    </select>
+    <div class="products"></div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="./asset/js/category.js"></script>
+    <script type="module" src="./asset/js/search.js"></script>
+    <script type="module" src="./asset/js/sort.js"></script>
+
+    <script type="module" src="asset/helpers/renderProducts.js"></script>
+  </body>
+</html>

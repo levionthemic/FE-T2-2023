@@ -1,0 +1,84 @@
+.categories {
+  display: flex;
+}
+
+.categories .button {
+  background-color: #ffc257;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.categories .button:hover {
+  cursor: pointer;
+  border: 1px solid #ffc257;
+  background: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+select {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgb(58, 239, 58);
+  margin-left: 10px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products .item {
+  border: 1px solid #ddd;
+  width: 300px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.products .item .inner-image {
+  display: flex;
+  justify-content: center;
+}
+.products .item .inner-content {
+  padding: 10px;
+}
+
+.products .item .inner-content .title {
+  margin-bottom: 10px;
+}
+
+.products .item .inner-content ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.products .item .inner-content ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.products .item .inner-content ul .price {
+  color: red;
+}
