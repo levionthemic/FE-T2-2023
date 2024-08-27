@@ -1,5 +1,6 @@
 import { renderProducts } from "./asset/helpers/renderProducts.js";
 import { search } from "./asset/js/search.js";
+import { category } from "./asset/js/category.js";
 fetch("https://dummyjson.com/products")
   .then((response) => response.json())
   .then((data) => {
@@ -8,10 +9,8 @@ fetch("https://dummyjson.com/products")
     data.products.forEach((item) => {
       se_categories.add(item.category);
     });
-    // console.log(se_categories);
     const listCategories = document.querySelector(".categories");
     se_categories.forEach((category) => {
-      // console.log(category);
       const html = `
 				<button class="button">${category}</button>
 			`;
@@ -29,4 +28,15 @@ fetch("https://dummyjson.com/products")
       e.preventDefault();
       search(products, e);
     });
+
+    // Category
+    const listButtons = document.querySelectorAll(".categories button");
+    listButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        category(products, button.innerText);
+      });
+    });
+
+    // Sort 
+    
   });
