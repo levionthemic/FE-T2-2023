@@ -1,6 +1,8 @@
 import { renderProducts } from "./asset/helpers/renderProducts.js";
 import { search } from "./asset/js/search.js";
 import { category } from "./asset/js/category.js";
+import { sort } from "./asset/js/sort.js";
+
 fetch("https://dummyjson.com/products")
   .then((response) => response.json())
   .then((data) => {
@@ -38,5 +40,11 @@ fetch("https://dummyjson.com/products")
     });
 
     // Sort 
+    const selection = document.querySelector("select");
+    selection.addEventListener("change", () => {
+      console.log(data.products);
+      sort(products, selection.value);
+    });
+    
     
   });
