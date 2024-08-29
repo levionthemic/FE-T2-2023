@@ -1,0 +1,22 @@
+.box {
+  background-color: #ddd;
+  margin-bottom: 10px;
+  font-size: 24px;
+  padding: 30px;
+}
+
+.box--active {
+  background: green;
+}
+
+.main {
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.main .box:nth-child(2) {
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+}
