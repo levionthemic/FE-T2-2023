@@ -1,3 +1,5 @@
+import { FaCss3Alt, FaDelicious } from "react-icons/fa";
+
 function MainContent() {
   let name = "Đặng Phương Nam";
   const css = {
@@ -13,6 +15,8 @@ function MainContent() {
         <div className="test" style={css}>
           Xin chào {name}!
         </div>
+        <FaCss3Alt style={{fontSize: "50px"}}/>
+        <FaDelicious />
       </div>
     </>
   );
