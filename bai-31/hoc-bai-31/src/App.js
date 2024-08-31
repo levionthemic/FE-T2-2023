@@ -1,10 +1,16 @@
 import './App.css';
-import Layout from './components/Layout';
+// import UseRef from './components/UseRef';
+import UseRef2 from './components/UseRef2';
+// import Layout from './components/Layout';
 
 function App() {
   return (
     <>
-      <Layout />
+      {/* <Layout /> */}
+
+      {/* <UseRef /> */}
+
+      <UseRef2 />
     </>
   );
 }
