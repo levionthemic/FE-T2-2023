@@ -1,10 +1,14 @@
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
+import CounterState from "./components/CounterRename";
+// import CounterRename from "./components/CounterRename";
 
 
 function App() {
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+
+      <CounterState />
     </>
   );
 }
