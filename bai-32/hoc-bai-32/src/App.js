@@ -3,6 +3,9 @@
 // import CounterState from "./components/CounterState";
 // import CounterRename from "./components/CounterRename";
 
+// import ProductReducer from "./components/ProductReducer";
+// import Todos from "./components/Todos";
+
 import ProductState from "./components/ProductState";
 
 
@@ -16,6 +19,10 @@ function App() {
       {/* <CounterReducer /> */}
 
       <ProductState />
+
+      {/* <ProductReducer /> */}
+
+      {/* <Todos /> */}
     </>
   );
 }
