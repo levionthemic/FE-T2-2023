@@ -1,6 +1,9 @@
 // import Counter from "./components/Counter";
-import CounterState from "./components/CounterRename";
+// import CounterReducer from "./components/CounterReducer";
+// import CounterState from "./components/CounterState";
 // import CounterRename from "./components/CounterRename";
+
+import ProductState from "./components/ProductState";
 
 
 function App() {
@@ -8,7 +11,11 @@ function App() {
     <>
       {/* <Counter /> */}
 
-      <CounterState />
+      {/* <CounterState /> */}
+
+      {/* <CounterReducer /> */}
+
+      <ProductState />
     </>
   );
 }
