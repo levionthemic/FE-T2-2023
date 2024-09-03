@@ -1,17 +1,27 @@
-export const createTodo = () => {
+export const createTodo = (content) => {
   return {
-    type: "CREATE_TODO"
+    type: "CREATE_TODO",
+    content: content
   }
 }
 
-export const completedTodo = () => {
+export const completedTodo = (id) => {
   return {
-    type: "COMPLETED_TODO"
+    type: "COMPLETED_TODO",
+    id: id
   }
 }
 
-export const deleteTodo = () => {
+export const undoTodo = (id) => {
   return {
-    type: "DELETE_TODO"
+    type: "UNDO_TODO",
+    id: id
+  }
+}
+
+export const deleteTodo = (id) => {
+  return {
+    type: "DELETE_TODO",
+    id: id
   }
 }

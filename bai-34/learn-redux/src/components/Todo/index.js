@@ -1,7 +1,8 @@
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
+import "./Todo.css";
 
-function Todos() {
+function Todo() {
   return (
     <>
       <div className="todo">
@@ -12,4 +13,4 @@ function Todos() {
   );
 }
 
-export default Todos;
+export default Todo;
