@@ -293,7 +293,7 @@
       "price": 6.99,
       "discountPercentage": 1.91,
       "rating": 3.5,
-      "stock": 25,
+      "stock": "24",
       "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Honey%20Jar/thumbnail.png"
     },
     {
@@ -320,7 +320,7 @@
     },
     {
       "id": "30",
-      "title": "Kiwi",
+      "title": "Kiwi ",
       "description": "Nutrient-rich kiwi, perfect for snacking or adding a tropical twist to your dishes.",
       "category": "groceries",
       "price": 2.49,
@@ -328,34 +328,6 @@
       "rating": 4.37,
       "stock": 1,
       "thumbnail": "https://cdn.dummyjson.com/products/images/groceries/Kiwi/thumbnail.png"
-    },
-    {
-      "id": "7086",
-      "title": "Đồng hồ treo tường",
-      "price": "120",
-      "stock": "150",
-      "thumbnail": "https://www.bing.com/th?id=OIP.wVB-NGMsTW1l8oh2PC9b2AHaIx&w=166&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
-      "discountPercentage": "40",
-      "description": "Đây là đồng hồ treo tường"
-    },
-    {
-      "id": "eee2",
-      "title": "Đồng hồ treo tường",
-      "price": "120",
-      "stock": "150",
-      "thumbnail": "https://www.bing.com/th?id=OIP.wVB-NGMsTW1l8oh2PC9b2AHaIx&w=166&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
-      "discountPercentage": "40",
-      "description": "Đây là đồng hồ treo tường"
-    },
-    {
-      "id": "1a62",
-      "title": "DHTT",
-      "category": "beauty",
-      "price": "120",
-      "discountPercentage": "40",
-      "stock": "150",
-      "thumbnail": "https://www.bing.com/th?id=OIP.wVB-NGMsTW1l8oh2PC9b2AHaIx&w=166&h=185&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
-      "description": "TDADF"
     }
   ],
   "category": [

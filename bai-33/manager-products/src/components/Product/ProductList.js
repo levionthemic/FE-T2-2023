@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
+import EditProduct from "./EditProduct";
+import DeleteProduct from "./DeleteProduct";
+import { getProductList } from "../../services/productService";
 
 function ProductList(props) {
   const [data, setData] = useState([]);
 
   const { reload } = props;
+  const [editReload, setEditReload] = useState(false);
+
+  const handleReload = () => {
+    setEditReload(!editReload);
+  }
 
   useEffect(() => {
     const fetchApi = async () => {
-      fetch("http://localhost:3002/products")
-        .then((res) => res.json())
-        .then((data) => {
-          setData(data.reverse());
-        });
+      const result = await getProductList();
+      setData(result.reverse());
     };
     fetchApi();
-  }, [reload]);
-
-  console.log(data);
+  }, [editReload, reload]);
 
   return (
     <>
@@ -29,8 +32,8 @@ function ProductList(props) {
             <h4 className="product__title">{item.title}</h4>
             <p className="product__price">{item.price}$</p>
             <p className="">{item.discountPercentage}%</p>
-            <button>Edit</button>
-            <button>Delete</button>
+            <EditProduct item={item} onReload={handleReload}/>
+            <DeleteProduct item={item} onReload={handleReload} />
           </div>
         ))}
       </div>

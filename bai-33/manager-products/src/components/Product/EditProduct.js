@@ -1,20 +1,24 @@
 import { useState, useEffect } from "react";
 import Modal from "react-modal";
 
-function CreateProduct(props) {
+import Swal from "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/src/sweetalert2.scss";
+
+import { getListCategory } from "../../services/categoryService";
+import { editProduct } from "../../services/productService";
+
+function EditProduct(props) {
+  const { item, onReload } = props;
   const [showModal, setShowModal] = useState(false);
-  const [data, setData] = useState({});
+  const [data, setData] = useState(item);
   const [dataCategory, setDataCategory] = useState([]);
 
-  const {onReload} = props;
+  
 
   useEffect(() => {
     const fetchApi = async () => {
-      fetch("http://localhost:3002/category")
-        .then((res) => res.json())
-        .then((data) => {
-          setDataCategory(data);
-        });
+      const result = await getListCategory();
+      setDataCategory(result);
     };
     fetchApi();
   }, []);
@@ -48,27 +52,24 @@ function CreateProduct(props) {
     setShowModal(false);
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch("http://localhost:3002/products", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data)
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data) {
-          setShowModal(false);
-          onReload();
-        }
+    const result = editProduct(item, data);
+    if (result) {
+      setShowModal(false);
+      onReload();
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Cập nhật sản phẩm thành công",
+        showConfirmButton: false,
+        timer: 2000,
       });
+    }
   };
   return (
     <>
-      <button onClick={openModal}>Tạo sản phẩm mới</button>
+      <button onClick={openModal}>Chỉnh sửa</button>
 
       <Modal
         isOpen={showModal}
@@ -86,6 +87,7 @@ function CreateProduct(props) {
                     type="text"
                     name="title"
                     onChange={handleChange}
+                    value={data.title}
                     required
                   />
                 </td>
@@ -94,7 +96,7 @@ function CreateProduct(props) {
               <tr>
                 <td>Danh mục</td>
                 <td>
-                  <select name="category" onChange={handleChange}>
+                  <select name="category" onChange={handleChange} value={data.category}>
                     {dataCategory.map((item) => (
                       <option value={item.value} key={item.id}>
                         {item.value}
@@ -110,6 +112,7 @@ function CreateProduct(props) {
                     type="text"
                     name="price"
                     onChange={handleChange}
+                    value={data.price}
                     required
                   />
                 </td>
@@ -122,6 +125,7 @@ function CreateProduct(props) {
                     type="text"
                     name="discountPercentage"
                     onChange={handleChange}
+                    value={data.discountPercentage}
                     required
                   />
                 </td>
@@ -134,6 +138,7 @@ function CreateProduct(props) {
                     type="text"
                     name="stock"
                     onChange={handleChange}
+                    value={data.stock}
                     required
                   />
                 </td>
@@ -146,6 +151,7 @@ function CreateProduct(props) {
                     type="text"
                     name="thumbnail"
                     onChange={handleChange}
+                    value={data.thumbnail}
                     required
                   />
                 </td>
@@ -159,6 +165,7 @@ function CreateProduct(props) {
                     type="text"
                     name="description"
                     onChange={handleChange}
+                    value={data.description}
                   ></textarea>
                 </td>
               </tr>
@@ -168,7 +175,7 @@ function CreateProduct(props) {
                   <button onClick={closeModal}>Huỷ</button>
                 </td>
                 <td>
-                  <input type="submit" value="Tạo mới" />
+                  <input type="submit" value="Chỉnh sửa" />
                 </td>
               </tr>
             </tbody>
@@ -179,4 +186,4 @@ function CreateProduct(props) {
   );
 }
 
-export default CreateProduct;
+export default EditProduct;
