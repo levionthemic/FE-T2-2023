@@ -1,6 +1,6 @@
 // https://enlink.themenate.net/dashboard/default
 
-import { Carousel, Col, Collapse, Image, Row, Tabs } from "antd";
+import { Carousel, Col, Collapse, Image, QRCode, Rate, Row, Tabs } from "antd";
 import "./LearnGrid.css";
 import CardItem from "../CardItem";
 
@@ -123,7 +123,15 @@ function LearnGrid() {
         src="https://th.bing.com/th?id=OIP.b7zeMkpUxOWXTSosO1N34wAAAA&w=306&h=204&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2"
       />
 
-      <Tabs items={items} defaultActiveKey="1"/>
+      <Tabs items={items} defaultActiveKey="1" />
+
+      <QRCode errorLevel="H" value="https://daca.vn" icon="./favicon.ico" />
+
+      <Rate
+        allowHalf
+        tooltips={["Yếu", "Kém", "Trung bình", "Khá", "Giỏi"]}
+        onChange={(e) => console.log(e)}
+      />
     </>
   );
 }
