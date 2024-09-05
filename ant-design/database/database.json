@@ -29,6 +29,36 @@
       ],
       "status": true,
       "typeRoom": true
+    },
+    {
+      "id": "97ba",
+      "name": "Phòng 123 B",
+      "quantityBed": 4,
+      "quantityPeople": 6,
+      "utils": [
+        "Nóng lạnh",
+        "Điều hòa"
+      ],
+      "status": true
+    },
+    {
+      "id": "5cbd",
+      "name": "Phòng 123 C",
+      "quantityBed": 4,
+      "quantityPeople": 8,
+      "typeRoom": true
+    },
+    {
+      "id": "81e8",
+      "name": "Phòng 124 A",
+      "quantityBed": 6,
+      "quantityPeople": 8,
+      "utils": [
+        "Nóng lạnh",
+        "Điều hòa",
+        "wifi"
+      ],
+      "status": true
     }
   ]
 }

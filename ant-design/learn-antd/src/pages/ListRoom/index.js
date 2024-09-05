@@ -14,7 +14,7 @@ function ListRoom() {
 
   const fetchApi = async () => {
     const response = await getListRoom();
-    setRooms(response);
+    setRooms(response.reverse());
   };
 
   useEffect(() => {

@@ -1,11 +1,19 @@
-import { Button, Form, Input, InputNumber, Select, Switch } from "antd";
+import {
+  Button,
+  Form,
+  Input,
+  InputNumber,
+  message,
+  Select,
+  Switch,
+} from "antd";
 import { createRoom } from "../../services/roomsService";
 
 const { Option } = Select;
 
-
 function CreateRoom() {
   const [form] = Form.useForm();
+  const [messageApi, contextHolder] = message.useMessage();
   const rules = [
     {
       required: true,
@@ -17,14 +25,31 @@ function CreateRoom() {
     const response = await createRoom(e);
     if (response) {
       form.resetFields(); // reset form về trạng thái ban đầu
+      messageApi.open({
+        type: "success",
+        content: "Tạo phòng mới thành công!",
+        duration: 5
+      });
+    } else {
+      messageApi.open({
+        type: "error",
+        content: "Tạo phòng mới không thành công!",
+        duration: 6
+      });
     }
   };
 
   return (
     <>
+      {contextHolder}
       <h2>Thêm phòng mới</h2>
 
-      <Form name="create-room" onFinish={handleSubmit} layout="vertical" form={form}>
+      <Form
+        name="create-room"
+        onFinish={handleSubmit}
+        layout="vertical"
+        form={form}
+      >
         <Form.Item label="Tên phòng" name={"name"} rules={rules}>
           <Input />
         </Form.Item>
@@ -54,11 +79,11 @@ function CreateRoom() {
         </Form.Item>
 
         <Form.Item label="Trạng thái" name={"status"} valuePropName="checked">
-          <Switch checkedChildren="Còn phòng" unCheckedChildren="Hết phòng"/>
+          <Switch checkedChildren="Còn phòng" unCheckedChildren="Hết phòng" />
         </Form.Item>
 
         <Form.Item label="Loại phòng" name={"typeRoom"} valuePropName="checked">
-          <Switch checkedChildren="VIP" unCheckedChildren="Thường"/>
+          <Switch checkedChildren="VIP" unCheckedChildren="Thường" />
         </Form.Item>
 
         <Form.Item>
