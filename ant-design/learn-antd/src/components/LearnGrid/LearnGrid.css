@@ -2,3 +2,12 @@
   background-color: orange;
   border-radius: 5px; 
 }
+
+.slider-item {
+  background-color: orange;
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  border-radius: 5px; 
+}

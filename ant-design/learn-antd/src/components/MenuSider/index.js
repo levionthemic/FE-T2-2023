@@ -75,6 +75,11 @@ function MenuSider() {
       icon: <PlusOutlined />,
       key: "/create-room",
     },
+    {
+      label: <Link to={"/list-room"}>List Room</Link>,
+      icon: <PlusOutlined />,
+      key: "/list-room",
+    },
   ];
 
   return (

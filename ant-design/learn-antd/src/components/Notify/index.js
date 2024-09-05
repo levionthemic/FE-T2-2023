@@ -1,4 +1,4 @@
-import { Button, Dropdown } from "antd";
+import { Badge, Button, Dropdown } from "antd";
 import { BellOutlined } from "@ant-design/icons";
 
 import "./Notify.css";
@@ -6,53 +6,52 @@ import "./Notify.css";
 function Notify() {
   const items = [
     {
-      label: <div className="notify__item">
-        <div className="notify__item-icon">
-          <BellOutlined />
-        </div>
-        <div className="notify__item-content">
-          <div className="notify__item-title">
-            Item 1
+      label: (
+        <div className="notify__item">
+          <div className="notify__item-icon">
+            <BellOutlined />
           </div>
-          <div className="notify__item-time">
-            8 mins ago
+          <div className="notify__item-content">
+            <div className="notify__item-title">Item 1</div>
+            <div className="notify__item-time">8 mins ago</div>
           </div>
         </div>
-      </div>,
-      key: '0',
+      ),
+      key: "0",
     },
     {
       label: "Item 2",
-      key: '1',
+      key: "1",
     },
     {
       label: "Item 3",
-      key: '2',
+      key: "2",
     },
     {
       label: "Item 4",
-      key: '3',
+      key: "3",
     },
     {
       label: "Item 5",
-      key: '4',
+      key: "4",
     },
     {
       label: "Item 6",
-      key: '5',
+      key: "5",
     },
     {
       label: "Item 7",
-      key: '6',
-    } 
+      key: "6",
+    },
   ];
+
   return (
     <>
       <Dropdown
         menu={{
           items,
         }}
-        trigger={['click']}
+        trigger={["click"]}
         dropdownRender={(menu) => (
           <>
             <div className="notify__dropdown">
@@ -62,17 +61,17 @@ function Notify() {
                 </div>
                 <Button type="link">View all</Button>
               </div>
-              <div className="notify__body">
-                {menu}
-              </div>
+              <div className="notify__body">{menu}</div>
             </div>
           </>
         )}
       >
-        <Button icon={<BellOutlined />}></Button>
+        <Badge count={5}>
+          <Button icon={<BellOutlined />}></Button>
+        </Badge>
       </Dropdown>
     </>
-  )
+  );
 }
 
 export default Notify;

@@ -1,10 +1,46 @@
 // https://enlink.themenate.net/dashboard/default
 
-import { Col, Row } from "antd";
+import { Carousel, Col, Collapse, Image, Row, Tabs } from "antd";
 import "./LearnGrid.css";
 import CardItem from "../CardItem";
 
+const { Panel } = Collapse;
+
 function LearnGrid() {
+  const list = [
+    {
+      id: 1,
+      title: "Logo 1 là gì?",
+      description: "Logo 1 là...",
+    },
+    {
+      id: 2,
+      title: "Logo 2 là gì?",
+      description: "Logo 2 là...",
+    },
+    {
+      id: 3,
+      title: "Logo 3 là gì?",
+      description: "Logo 3 là...",
+    },
+  ];
+  const items = [
+    {
+      key: 1,
+      label: "Tab 1",
+      children: "Nội dung Tab 1",
+    },
+    {
+      key: 2,
+      label: "Tab 2",
+      children: "Nội dung Tab 2",
+    },
+    {
+      key: 3,
+      label: "Tab 3",
+      children: "Nội dung Tab 3",
+    },
+  ];
   return (
     <>
       {/* <Row gutter={[20, 10]}>
@@ -66,6 +102,28 @@ function LearnGrid() {
           <CardItem title="Box 11" style={{ height: "400px" }} />
         </Col>
       </Row>
+
+      <Carousel autoplay effect="fade">
+        <div className="slider-item">1</div>
+        <div className="slider-item">2</div>
+        <div className="slider-item">3</div>
+        <div className="slider-item">4</div>
+      </Carousel>
+
+      <Collapse defaultActiveKey={["1"]} accordion>
+        {list.map((item) => (
+          <Panel header={item.title} key={item.id}>
+            <p>{item.description}</p>
+          </Panel>
+        ))}
+      </Collapse>
+
+      <Image
+        width={200}
+        src="https://th.bing.com/th?id=OIP.b7zeMkpUxOWXTSosO1N34wAAAA&w=306&h=204&c=8&rs=1&qlt=90&o=6&cb=13&pid=3.1&rm=2"
+      />
+
+      <Tabs items={items} defaultActiveKey="1"/>
     </>
   );
 }

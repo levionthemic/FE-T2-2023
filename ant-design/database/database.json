@@ -16,5 +16,19 @@
         "07/09/2024"
       ]
     }
+  ],
+  "rooms": [
+    {
+      "id": "38b0",
+      "name": "Phòng ABC 2",
+      "quantityBed": 2,
+      "quantityPeople": 4,
+      "utils": [
+        "wifi",
+        "Nóng lạnh"
+      ],
+      "status": true,
+      "typeRoom": true
+    }
   ]
 }
