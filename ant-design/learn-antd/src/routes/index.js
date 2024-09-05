@@ -2,6 +2,7 @@ import LayoutDefault from "../layout/LayoutDefault";
 
 import Dashboard from "../pages/Dashboard";
 import BookRoom from "../pages/BookRoom";
+import CreateRoom from "../pages/CreateRoom";
 
 export const routes = [
   {
@@ -15,6 +16,10 @@ export const routes = [
       {
         path: "/book-room",
         element: <BookRoom />
+      },
+      {
+        path: "/create-room",
+        element: <CreateRoom />
       },
     ]
   }

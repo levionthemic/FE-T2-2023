@@ -3,6 +3,7 @@ import {
   PlayCircleOutlined,
   CheckOutlined,
   HighlightOutlined,
+  PlusOutlined
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 function MenuSider() {
@@ -68,6 +69,11 @@ function MenuSider() {
       label: <Link to={"/book-room"}>Book Room</Link>,
       icon: <HighlightOutlined />,
       key: "/book-room",
+    },
+    {
+      label: <Link to={"/create-room"}>Create Room</Link>,
+      icon: <PlusOutlined />,
+      key: "/create-room",
     },
   ];
 
