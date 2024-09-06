@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Line } from "@ant-design/plots";
 
-function BasicLine() {
+function StepLine() {
   const [dataChart, setDataChart] = useState([]);
 
   useEffect(() => {
@@ -19,16 +19,24 @@ function BasicLine() {
     // autoFit: false,
     // width: 400,
     // height: 200
-    shape: "smooth",
-    point: true,
+    // shape: "smooth",
+    // point: true,
+    slider: {
+      x: {
+        start: 0,
+        end: 1
+      }
+    },
+    stepType: "hv",
+    point: true
   }
 
   return (
     <>
-      <h2>Ví dụ Basic Line</h2>
+      <h2>Ví dụ Step Line</h2>
       <Line {...config}/>
     </>
   )
 }
 
-export default BasicLine;
+export default StepLine;

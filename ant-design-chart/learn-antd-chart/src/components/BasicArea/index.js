@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Line } from "@ant-design/plots";
+import { Area } from "@ant-design/plots";
 
-function BasicLine() {
+function BasicArea() {
   const [dataChart, setDataChart] = useState([]);
 
   useEffect(() => {
@@ -16,19 +16,20 @@ function BasicLine() {
     data: dataChart,
     xField: "date",
     yField: "quantity",
-    // autoFit: false,
-    // width: 400,
-    // height: 200
-    shape: "smooth",
+    smooth: true,
     point: true,
+    slider: {
+      start: 0,
+      end: 1
+    }
   }
 
   return (
     <>
-      <h2>Ví dụ Basic Line</h2>
-      <Line {...config}/>
+      <h2>Ví dụ Basic Area</h2>
+      <Area {...config}/>
     </>
   )
 }
 
-export default BasicLine;
+export default BasicArea;
