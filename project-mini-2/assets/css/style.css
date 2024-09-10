@@ -1,0 +1,27 @@
+/* Header */
+.header {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  min-height: 80px;
+  z-index: 100;
+}
+.header .container {
+  background: white;
+  border-radius: 50px;
+}
+.header .inner-menu .inner-item a {
+  color: var(--color-text-two);
+}
+/* End Header */
+
+/* Welcome Area */
+.welcome-area {
+  background-image: url("../../assets/images/banner-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+/* End Welcome Area */
