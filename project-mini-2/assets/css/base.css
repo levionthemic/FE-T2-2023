@@ -6,6 +6,8 @@
   --color-text-one: #1E1E1E;
   --color-text-two: #7A7A7A;
 
+  --font: 'Raleway', sans-serif;
+
 }
 
 * {
@@ -13,6 +15,35 @@
 }
 
 body {
-  color: var(--color-text-two);
-  font-family: "Raleway", sans-serif;
+  color: var(--color-text-one);
+  line-height: 1.6;
+  font-family: var(--font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text-one);
+}
+a:hover {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 45px;
+  background: #fff;
+  color: var(--color-text-one);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+.button-two {
+  background: var(--color-bg-two);
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+.button-two:hover {
+  background: var(--color-bg-one);
+  color: white;
 }

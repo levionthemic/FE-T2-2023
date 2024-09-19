@@ -1,27 +1,120 @@
 /* Header */
 .header {
   position: fixed;
-  top: 30px;
+  top: 40px;
   left: 0;
-  right: 0;
-  min-height: 80px;
-  z-index: 100;
+  width: 100%;
+  z-index: 9999;
 }
-.header .container {
+.header .inner-main {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-radius: 45px;
   background: white;
-  border-radius: 50px;
 }
-.header .inner-menu .inner-item a {
-  color: var(--color-text-two);
+.header .inner-logo img {
+  height: 30px;
+  width: auto;
+}
+.header .inner-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.header .inner-menu ul li {
+  margin-left: 25px;
+}
+.header .inner-menu ul li a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .inner-menu ul li a:hover {
+  color: var(--color-bg-two);
+  text-decoration: none;
+}
+.header .inner-menu ul li a.active {
+  color: var(--color-bg-two);
 }
 /* End Header */
 
-/* Welcome Area */
-.welcome-area {
-  background-image: url("../../assets/images/banner-bg.png");
+/* Section 1 */
+.section-one {
+  background-image: url("../images/banner-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* End Welcome Area */
+
+.section-one .inner-wrap {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-one .inner-title {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.section-one .inner-desc {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* End Section 1 */
+
+/* Section 2 */
+.section-two {
+  margin-top: -220px;
+}
+
+.section-two .inner-box {
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.section-two .inner-box .inner-icon {
+  background: var(--color-bg-one);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.section-two .inner-box .inner-icon img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.section-two .inner-box:hover .inner-icon {
+  background-color: var(--color-bg-two);
+  cursor: pointer;
+}
+
+.section-two .inner-box .inner-title {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.section-two .inner-box .inner-desc {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+/* End Section 2 */
