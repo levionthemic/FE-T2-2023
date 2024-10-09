@@ -1,0 +1,10 @@
+.wrap {
+  &__image {
+    background: #ddd;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

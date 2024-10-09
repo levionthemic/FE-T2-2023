@@ -22,7 +22,11 @@ function Home() {
   const { loading, setLoading } = useState(false);
 
   useEffect(() => {
-    
+    fetch("http://localhost:3002/products")
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+      })
   }, []);
 
   const menuItems = [
@@ -142,7 +146,7 @@ function Home() {
     {
       label: "Sculpture",
       key: "1",
-      children: ""
+      children: <>Home</>
     },
     {
       label: "Maquette",
