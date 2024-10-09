@@ -1,0 +1,157 @@
+.header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  background-color: transparent;
+
+  &__container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+      flex: 1;
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+
+    a {
+      padding: 10px;
+      margin: 0 10px;
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
+    };
+  }
+
+  &__search {
+    margin: 15px;
+    font-size: 25px;
+  }
+
+  &__user {
+    margin: 15px;
+    font-size: 25px;
+  }
+
+  &__cart {
+    margin: 15px;
+    font-size: 25px;
+  }
+}
+
+.section-one {
+  
+  img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
+
+.section-two {
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 70px;
+
+    &__icon {
+      font-size: 40px;
+      margin: 10px 15px;
+    } 
+
+    &__content {
+      padding: 15px;
+
+      * {
+        margin: 0;
+      }
+
+      h5 {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.section-three {
+  .inner-title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+      font-weight: 700;
+    }
+
+    &::after {
+      content: "";
+      border-bottom: 2px solid #888888;
+      display: block;
+      text-align: center;
+      margin: 15px auto 0px;
+      width: 60px;
+      transition: all 0.5s ease 0s;
+    }
+  }
+
+  .inner-list {
+    padding: 5px;
+    background-color: #ddd;
+
+    display: flex;
+    
+    .inner-item {
+      width: auto;
+      background: white;
+      margin: 5px;
+      position: relative;
+
+      h4 {
+        text-align: center;
+        font-size: 21px;
+        position: absolute;
+        top: 20px;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      &:nth-child(2) {
+        h4 {
+          top: calc(90% - 20px)
+        }
+      }
+    }
+
+
+  }
+}
+
